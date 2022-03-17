@@ -1,0 +1,42 @@
+@import "../../Scss/Variables.scss";
+
+.header {
+  width: 230px;
+  padding-top: 16px;
+}
+
+.header__link {
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 45px;
+  margin-left: -10px;
+  color: $primaryColor;
+}
+
+.header__link__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: background-color 0.25s ease;
+}
+
+.header__link:hover {
+  .header__link__inner {
+    background-color: $cardColor-Light;
+  }
+}
+
+.app--dark {
+  .header__link {
+    color: $textColor-Dark;
+  }
+
+  .header__link:hover {
+    .header__link__inner {
+      background-color: $cardColor-Dark;
+    }
+  }
+}

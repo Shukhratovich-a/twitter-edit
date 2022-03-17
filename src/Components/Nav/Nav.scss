@@ -1,0 +1,72 @@
+@import "../../Scss/Variables.scss";
+
+.nav {
+  margin-bottom: 55px;
+}
+
+.nav__list {
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  @include TextHeadingMedium;
+
+  .nav__link__inner {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 22px;
+    transition: background-color 0.25s ease;
+  }
+
+  &:hover {
+    .nav__link__inner {
+      background-color: $cardColor-Light;
+    }
+  }
+
+  .icon {
+    margin-right: 24px;
+  }
+
+  .icon--fill {
+    display: none;
+  }
+
+  &--active {
+    color: $primaryColor;
+
+    .icon--fill {
+      display: block;
+    }
+
+    .icon--outline {
+      display: none;
+    }
+  }
+}
+
+.app--dark {
+  .nav__link {
+    &:hover {
+      .nav__link__inner {
+        background-color: $cardColor-Dark;
+      }
+    }
+  }
+}

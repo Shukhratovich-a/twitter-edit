@@ -1,0 +1,71 @@
+@import "./Scss/Fonts.scss";
+@import "./Scss/Variables.scss";
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  @include TextBody;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+
+  &--light {
+    background-color: $bG-Light;
+    color: $textColor-Light;
+  }
+
+  &--dark {
+    background-color: $bG-Dark;
+    color: $textColor-Dark;
+  }
+
+  &__inner {
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
