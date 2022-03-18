@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MoreSmallIcon from "../Lib/Icons/MoreSmallIcon";
 import UserIcon from "../Lib/Icons/UserIcon";
 
