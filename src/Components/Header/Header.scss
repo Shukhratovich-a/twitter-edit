@@ -1,8 +1,15 @@
 @import "../../Scss/Variables.scss";
 
 .header {
+  display: flex;
+  flex-direction: column;
   width: 230px;
-  padding-top: 16px;
+  height: 100%;
+  padding: 16px 0;
+}
+
+.header__inner {
+  flex-grow: 1;
 }
 
 .header__link {
@@ -29,6 +36,11 @@
   }
 }
 
+.header .tweet-button {
+  width: 100%;
+  margin-left: -10px;
+}
+
 .app--dark {
   .header__link {
     color: $textColor-Dark;
@@ -38,5 +50,11 @@
     .header__link__inner {
       background-color: $cardColor-Dark;
     }
+  }
+}
+
+@media only screen and(max-height: 600px) {
+  .header__link {
+    margin-bottom: 25px;
   }
 }

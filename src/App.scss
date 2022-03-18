@@ -38,8 +38,16 @@ img {
   display: block;
 }
 
-main {
+.main {
   flex-grow: 1;
+  border-left: 1px solid $strokeColor-Light;
+  border-right: 1px solid $strokeColor-Light;
+}
+
+.app--dark {
+  .main {
+    border-color: $strokeColor-Dark;
+  }
 }
 
 #root {
@@ -62,10 +70,16 @@ main {
   }
 
   &__inner {
+    display: flex;
+    column-gap: 30px;
     max-width: 1400px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0 20px;
   }
+}
+
+section {
+  padding: 0 16px;
 }

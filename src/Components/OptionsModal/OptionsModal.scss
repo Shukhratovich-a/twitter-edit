@@ -1,0 +1,42 @@
+@import "../../Scss/Variables.scss";
+
+.options{
+  display: none;
+
+  &--open{
+    display: block;
+  }
+}
+
+.options-modal__back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.options-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  width: 380px;
+  height: 260px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: $bG-Light;
+  box-shadow: $box-shadow;
+
+  * {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.app--dark {
+  .options-modal {
+    background-color: $bG-Dark;
+  }
+}

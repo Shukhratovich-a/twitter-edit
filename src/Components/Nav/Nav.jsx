@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import useLanguage from "../../Hooks/useLanguage";
 
 import BookmarkIcon from "../Lib/Icons/BookmarkIcon";
 import ExploreIcon from "../Lib/Icons/ExploreIcon";
@@ -12,6 +13,8 @@ import ProfileIcon from "../Lib/Icons/ProfileIcon";
 import "./Nav.scss";
 
 const Nav = () => {
+  const [lang] = useLanguage();
+
   return (
     <nav className="nav">
       <ul className="nav__list">
@@ -22,7 +25,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <HomeIcon />
-              Home
+              {lang.nav.navItem1}
             </span>
           </NavLink>
         </li>
@@ -34,7 +37,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ExploreIcon />
-              Explore
+              {lang.nav.navItem2}
             </span>
           </NavLink>
         </li>
@@ -46,7 +49,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <NotificationsIcon />
-              Notifications
+              {lang.nav.navItem3}
             </span>
           </NavLink>
         </li>
@@ -58,7 +61,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <MessageIcon />
-              Messages
+              {lang.nav.navItem4}
             </span>
           </NavLink>
         </li>
@@ -70,7 +73,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <BookmarkIcon />
-              Bookmarks
+              {lang.nav.navItem5}
             </span>
           </NavLink>
         </li>
@@ -82,7 +85,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ListIcon />
-              Lists
+              {lang.nav.navItem6}
             </span>
           </NavLink>
         </li>
@@ -94,7 +97,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ProfileIcon />
-              Profile
+              {lang.nav.navItem7}
             </span>
           </NavLink>
         </li>
@@ -106,7 +109,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <MoreIcon />
-              More
+              {lang.nav.navItem8}
             </span>
           </NavLink>
         </li>

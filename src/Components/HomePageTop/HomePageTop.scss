@@ -1,0 +1,48 @@
+@import "../../Scss/Variables.scss";
+
+.home__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid $strokeColor-Light;
+}
+
+.home__heading {
+  margin: 0;
+  @include TextHeadingBold;
+}
+
+.home__button {
+  margin: -10px 0;
+  margin-left: 0;
+  padding: 10px;
+  color: $primaryColor;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  svg {
+    display: block;
+  }
+
+  &:hover {
+    background-color: $cardColor-Light;
+  }
+}
+
+.app--dark {
+  .home__top {
+    border-color: $strokeColor-Dark;
+  }
+
+  .home__button {
+    &:hover {
+      background-color: $cardColor-Dark;
+    }
+  }
+}

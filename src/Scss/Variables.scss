@@ -13,6 +13,10 @@ $strokeColor-Light: #ebeef0;
 $cardColor-Light: #f6f9fa;
 
 $primaryColor: #1ea1f1;
+$primaryColor-onHover: #1a8cd8;
+$primaryColor-onClick: #177cc0;
+
+$box-shadow: rgb(101 119 134 / 20%) 0px 0px 15px, rgb(101 119 134 / 15%) 0px 0px 3px 1px;
 
 @mixin TextHeading {
   font-weight: 400;
@@ -42,4 +46,10 @@ $primaryColor: #1ea1f1;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+}
+
+@mixin Caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }

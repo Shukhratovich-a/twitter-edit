@@ -1,0 +1,56 @@
+@import "../../Scss/Variables.scss";
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $cardColor-Light;
+  }
+}
+
+.profile {
+  .user-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+
+    path {
+      display: block;
+    }
+  }
+}
+
+.profile__inner {
+  margin-right: auto;
+}
+
+.profile__name {
+  margin: 0;
+  margin-bottom: 4px;
+  @include TextBodyBold;
+}
+
+.profile__user-name {
+  margin: 0;
+  @include Caption;
+  color: $shyColor-Light;
+}
+
+.app--dark {
+  .profile {
+    &:hover {
+      background-color: $cardColor-Dark;
+    }
+  }
+
+  .profile__user-name {
+    color: $shyColor-Dark;
+  }
+}
