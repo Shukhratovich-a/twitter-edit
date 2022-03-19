@@ -1,0 +1,71 @@
+@import "../../Scss/Variables.scss";
+
+.login {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.login__heading {
+  margin: 0;
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 49px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.login__input {
+  display: block;
+  width: 100%;
+  padding: 22px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid $strokeColor-Light;
+  border-radius: 6px;
+  outline: none;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $shyColor-Light;
+  }
+}
+
+.login__button {
+  width: 100%;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  background-color: $primaryColor;
+  color: $bG-Light;
+  border-radius: 76px;
+
+  &:hover{
+    background-color: $primaryColor-onHover;
+  }
+
+  &:active{
+    background-color: $primaryColor-onClick;
+  }
+}
+
+.app--dark {
+  .login__input {
+    border-color: $strokeColor-Dark;
+    background-color: $InputColor-Dark;
+  }
+
+  &::placeholder {
+    color: $shyColor-Dark;
+  }
+}

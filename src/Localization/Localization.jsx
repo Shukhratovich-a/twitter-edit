@@ -14,6 +14,10 @@ const languages = {
     buttons: {
       tweetButton: "Tweet",
     },
+
+    newTweet: {
+      placeholder: "What's happening?",
+    },
   },
   ru: {
     nav: {
@@ -30,6 +34,10 @@ const languages = {
     buttons: {
       tweetButton: "Твитнуть",
     },
+
+    newTweet: {
+      placeholder: "Что происходит?",
+    },
   },
   uz: {
     nav: {
@@ -45,6 +53,10 @@ const languages = {
 
     buttons: {
       tweetButton: "Tvit",
+    },
+
+    newTweet: {
+      placeholder: "Nimalar bolyapti?",
     },
   },
 };

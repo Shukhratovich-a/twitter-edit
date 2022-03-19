@@ -42,6 +42,11 @@ img {
   flex-grow: 1;
   border-left: 1px solid $strokeColor-Light;
   border-right: 1px solid $strokeColor-Light;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .app--dark {
@@ -78,8 +83,4 @@ img {
     margin: 0 auto;
     padding: 0 20px;
   }
-}
-
-section {
-  padding: 0 16px;
 }

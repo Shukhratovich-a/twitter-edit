@@ -12,11 +12,13 @@ const HomePageTop = () => {
 
   return (
     <section className="home__top">
-      <h2 className="home__heading">{lang.nav.navItem1}</h2>
+      <div className="home__top__inner">
+        <h2 className="home__heading">{lang.nav.navItem1}</h2>
 
-      <button className="home__button" name="options" onClick={() => setOpen(true)}>
-        <SparksIcon />
-      </button>
+        <button className="home__button" name="options" onClick={() => setOpen(true)}>
+          <SparksIcon />
+        </button>
+      </div>
 
       <OptionsModal isOpen={isOpen} setOpen={setOpen} />
     </section>

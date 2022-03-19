@@ -1,0 +1,15 @@
+@import "../../Scss/Variables.scss";
+
+.tweet {
+  border-top: 1px solid $strokeColor-Light;
+}
+
+.tweet__inner{
+  padding: 24px 16px;
+}
+
+.app--dark {
+  .tweet {
+    border-color: $strokeColor-Dark;
+  }
+}

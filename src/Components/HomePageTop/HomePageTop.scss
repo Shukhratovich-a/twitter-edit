@@ -1,12 +1,19 @@
 @import "../../Scss/Variables.scss";
 
 .home__top {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  top: 0;
+  position: sticky;
+  right: 0;
   padding: 16px;
   border-bottom: 1px solid $strokeColor-Light;
+  background-color: rgba($color: $bG-Light, $alpha: 0.5);
+  backdrop-filter: blur(30px);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .home__heading {
@@ -25,6 +32,7 @@
   outline: none;
   cursor: pointer;
   transition: background-color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
 
   svg {
     display: block;
@@ -38,6 +46,7 @@
 .app--dark {
   .home__top {
     border-color: $strokeColor-Dark;
+    background-color: rgba($color: $bG-Dark, $alpha: 0.7);
   }
 
   .home__button {
