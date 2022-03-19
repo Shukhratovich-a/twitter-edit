@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={`app ${theme === "dark" ? "app--dark" : "app--light"}`}>
       <Routes>
-        <Route path="" element={<AppInner />} />
+        <Route path="/*" element={<AppInner />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
