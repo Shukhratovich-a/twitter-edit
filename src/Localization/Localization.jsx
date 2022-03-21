@@ -18,6 +18,21 @@ const languages = {
     newTweet: {
       placeholder: "What's happening?",
     },
+
+    searchInput: "Search Twitter",
+
+    optionsModal: {
+      modalHeading: "На главной сначала отображаются популярные твиты",
+
+      modalLink1: {
+        modalLinkText: "Показывать вместо этого последние твиты",
+        modalLinkSubText: "Твиты будут отображаться по мере их публикации.",
+      },
+
+      modalLink2: {
+        modalLintSettings: "Посмотреть настройки контента",
+      },
+    },
   },
   ru: {
     nav: {
@@ -38,6 +53,21 @@ const languages = {
     newTweet: {
       placeholder: "Что происходит?",
     },
+
+    searchInput: "Поиск в Твиттере",
+
+    optionsModal: {
+      modalHeading: "На главной сначала отображаются популярные твиты",
+
+      modalLink1: {
+        modalLinkText: "Показывать вместо этого последние твиты",
+        modalLinkSubText: "Твиты будут отображаться по мере их публикации.",
+      },
+
+      modalLink2: {
+        modalLintSettings: "Посмотреть настройки контента",
+      },
+    },
   },
   uz: {
     nav: {
@@ -57,6 +87,21 @@ const languages = {
 
     newTweet: {
       placeholder: "Nimalar bolyapti?",
+    },
+
+    searchInput: "Tvitterdan qidirmoq",
+
+    optionsModal: {
+      modalHeading: "На главной сначала отображаются популярные твиты",
+
+      modalLink1: {
+        modalLinkText: "Показывать вместо этого последние твиты",
+        modalLinkSubText: "Твиты будут отображаться по мере их публикации.",
+      },
+
+      modalLink2: {
+        modalLintSettings: "Посмотреть настройки контента",
+      },
     },
   },
 };

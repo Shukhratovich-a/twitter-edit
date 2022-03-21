@@ -11,7 +11,7 @@ const Tweets = () => {
 
   React.useEffect(() => {
     (async () => {
-      const res = await fetch("https://reqres.in/api/users?page=2");
+      const res = await fetch("https://reqres.in/api/users?page=1");
 
       const data = await res.json();
 

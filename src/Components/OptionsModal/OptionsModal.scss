@@ -20,7 +20,6 @@
   z-index: 999;
   width: 380px;
   height: 260px;
-  padding: 16px;
   border-radius: 4px;
   background-color: $bG-Light;
   box-shadow: $box-shadow;
@@ -28,6 +27,23 @@
   * {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.options-modal__top {
+  padding: 16px 20px;
+  border-bottom: 1px solid $strokeColor-Light;
+}
+
+.options-modal__heading {
+  @include TextHeadingBold;
+  text-align: center;
+}
+
+.options-modal {
+  .sparcks-icon-big {
+    height: 50px;
+    margin-bottom: 12px;
   }
 }
 
@@ -52,11 +68,15 @@
   .options-modal {
     background-color: $bG-Dark;
   }
+
+  .options-modal__top {
+    border-bottom: 1px solid $strokeColor-Dark;
+  }
 }
 
 @media only screen and(max-width: 500px) {
   .options-modal {
-    top: calc(100vh - 260px );
+    top: calc(100vh - 260px);
     right: 0;
     width: 100%;
     border-radius: 0;
