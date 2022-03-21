@@ -4,6 +4,7 @@ const LoginPage = () => {
   return (
     <section className="login">
       <h2 className="login__heading">Log in to Twitter</h2>
+      
       <form className="login__form">
         <input
           className="login__input"

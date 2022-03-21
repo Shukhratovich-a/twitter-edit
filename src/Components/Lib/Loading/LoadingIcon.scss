@@ -1,6 +1,13 @@
 .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 12px;
+}
+
+.loading-icon {
   transform: rotate(0deg);
-  animation: spline 1s linear infinite;
+  animation: spline 0.8s linear infinite;
 }
 
 #circle-1 {

@@ -1,32 +1,22 @@
 @import "../../Scss/Variables.scss";
 
-.options{
+.options {
   display: block;
-
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
+  z-index: 99;
 
-  &--open{
+  &--open {
     opacity: 1;
     pointer-events: all;
   }
-}
-
-.options-modal__back {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
 }
 
 .options-modal {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 99;
   width: 380px;
   height: 260px;
   padding: 16px;
@@ -40,8 +30,46 @@
   }
 }
 
+.options-modal__back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+
+  &--open {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
 .app--dark {
   .options-modal {
     background-color: $bG-Dark;
+  }
+}
+
+@media only screen and(max-width: 500px) {
+  .options-modal {
+    top: calc(100vh - 260px);
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+  }
+
+  .options-modal__back {
+    background-color: rgba($color: $cardColor-Light, $alpha: 0.7);
+  }
+
+  .app--dark {
+    .options-modal__back {
+      background-color: rgba($color: $cardColor-Dark, $alpha: 0.7);
+    }
   }
 }

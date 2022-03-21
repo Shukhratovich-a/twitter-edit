@@ -3,13 +3,13 @@ import useLanguage from "../../Hooks/useLanguage";
 
 import "./OptionsModal.scss";
 
-const OptionsModal = ({ isOpen, setOpen }) => {
+const OptionsModal = ({ isOpen }) => {
   const [theme, setTheme] = useTheme();
   const [, setLanguage] = useLanguage();
 
   return (
     <div className={`options ${isOpen ? "options--open" : ""}`}>
-      <div className="options-modal__back" onClick={() => setOpen(false)}></div>
+      
       <div className="options-modal">
         <button
           className="theme"

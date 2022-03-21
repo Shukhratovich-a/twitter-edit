@@ -4,12 +4,103 @@
   border-top: 1px solid $strokeColor-Light;
 }
 
-.tweet__inner{
+.tweet__inner {
+  display: flex;
   padding: 24px 16px;
+}
+
+.tweet {
+  .user-icon,
+  .tweet__user-avatar {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    border-radius: 50%;
+  }
+}
+
+.tweet__content {
+  flex-grow: 1;
+}
+
+.tweet__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.tweet__top__left {
+  display: flex;
+  align-items: center;
+}
+
+.tweet__name {
+  margin: 0;
+  margin-right: 8px;
+  @include TextBodyBold;
+}
+
+.tweet__user-name {
+  margin-right: 8px;
+  @include TextBody;
+  color: $shyColor-Light;
+}
+
+.tweet__activity {
+  display: flex;
+  align-items: center;
+  @include TextBody;
+  color: $shyColor-Light;
+
+  &::before {
+    content: "";
+    margin-right: 8px;
+    width: 2px;
+    height: 2px;
+    background-color: $shyColor-Light;
+    border-radius: 50%;
+  }
+}
+
+.tweet__top__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $shyColor-Light;
+}
+
+.tweet__description {
+  margin: 0;
+  margin-bottom: 6px;
+  @include TextBody;
 }
 
 .app--dark {
   .tweet {
     border-color: $strokeColor-Dark;
+  }
+
+  .tweet__user-name {
+    color: $shyColor-Dark;
+  }
+
+  .tweet__activity {
+    color: $shyColor-Dark;
+  }
+
+  .tweet__top__button {
+    color: $shyColor-Dark;
+  }
+}
+
+@media only screen and(max-width: 500px) {
+  .tweet:first-child{
+    border: 0;
   }
 }

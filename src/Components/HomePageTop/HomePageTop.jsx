@@ -11,17 +11,23 @@ const HomePageTop = () => {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
-    <section className="home__top">
-      <div className="home__top__inner">
-        <h2 className="home__heading">{lang.nav.navItem1}</h2>
+    <>
+      <div
+        className={`options-modal__back ${isOpen ? "options-modal__back--open" : ""}`}
+        onClick={() => setOpen(false)}
+      ></div>
 
-        <button className="home__button" name="options" onClick={() => setOpen(true)}>
-          <SparksIcon />
-        </button>
-      </div>
+      <section className={`home__top ${isOpen ? "home__top--modal" : ""}`}>
+        <div className="home__top__inner">
+          <h2 className="home__heading">{lang.nav.navItem1}</h2>
 
-      <OptionsModal isOpen={isOpen} setOpen={setOpen} />
-    </section>
+          <button className="home__button" name="options" onClick={() => setOpen(true)}>
+            <SparksIcon />
+          </button>
+        </div>
+        <OptionsModal isOpen={isOpen} />
+      </section>
+    </>
   );
 };
 

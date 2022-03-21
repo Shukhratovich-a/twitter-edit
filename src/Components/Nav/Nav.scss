@@ -79,17 +79,77 @@
 }
 
 @media only screen and(max-height: 730px) {
-  .nav__link[href="/lists"]{
+  .nav__link[href="/lists"] {
     display: none;
-  } 
+  }
 
-  .nav__link[href="/bookmarks"]{
+  .nav__link[href="/bookmarks"] {
     display: none;
-  } 
+  }
 }
 
 @media only screen and(max-height: 600px) {
-  .nav{
+  .nav {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and(max-width: 1200px) {
+  .nav__list {
+    margin: 0;
+  }
+
+  .nav__link {
+    justify-content: center;
+
+    .icon {
+      margin: 0;
+    }
+  }
+
+  .nav__link__text {
+    display: none;
+  }
+}
+
+@media only screen and(max-width: 500px) {
+  .nav {
+    margin: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__item {
+    & + & {
+      margin-top: 0;
+    }
+  }
+
+  .nav__item:nth-child(5) {
+    display: none;
+  }
+
+  .nav__item:nth-child(6) {
+    display: none;
+  }
+
+  .nav__item:nth-child(7) {
+    display: none;
+  }
+
+  .nav__item:nth-child(8) {
+    display: none;
+  }
+
+  .nav__link[href="/profile"] {
+    display: none;
+  }
+
+  .nav__link[href="/more"] {
+    display: none;
   }
 }

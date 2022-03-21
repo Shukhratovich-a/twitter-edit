@@ -25,7 +25,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <HomeIcon />
-              {lang.nav.navItem1}
+              <span className="nav__link__text">{lang.nav.navItem1}</span>
             </span>
           </NavLink>
         </li>
@@ -37,7 +37,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ExploreIcon />
-              {lang.nav.navItem2}
+              <span className="nav__link__text">{lang.nav.navItem2}</span>
             </span>
           </NavLink>
         </li>
@@ -49,7 +49,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <NotificationsIcon />
-              {lang.nav.navItem3}
+              <span className="nav__link__text">{lang.nav.navItem3}</span>
             </span>
           </NavLink>
         </li>
@@ -61,7 +61,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <MessageIcon />
-              {lang.nav.navItem4}
+              <span className="nav__link__text">{lang.nav.navItem4}</span>
             </span>
           </NavLink>
         </li>
@@ -73,7 +73,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <BookmarkIcon />
-              {lang.nav.navItem5}
+              <span className="nav__link__text">{lang.nav.navItem5}</span>
             </span>
           </NavLink>
         </li>
@@ -85,7 +85,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ListIcon />
-              {lang.nav.navItem6}
+              <span className="nav__link__text">{lang.nav.navItem6}</span>
             </span>
           </NavLink>
         </li>
@@ -97,7 +97,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <ProfileIcon />
-              {lang.nav.navItem7}
+              <span className="nav__link__text">{lang.nav.navItem7}</span>
             </span>
           </NavLink>
         </li>
@@ -109,7 +109,7 @@ const Nav = () => {
           >
             <span className="nav__link__inner">
               <MoreIcon />
-              {lang.nav.navItem8}
+              <span className="nav__link__text">{lang.nav.navItem8}</span>
             </span>
           </NavLink>
         </li>

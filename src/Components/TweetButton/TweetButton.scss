@@ -19,4 +19,8 @@
   &:active {
     background-color: $primaryColor-onClick;
   }
+
+  .tweet-icon{
+    display: none;
+  }
 }
