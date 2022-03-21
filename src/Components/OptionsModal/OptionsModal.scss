@@ -17,6 +17,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 999;
   width: 380px;
   height: 260px;
   padding: 16px;
@@ -55,7 +56,7 @@
 
 @media only screen and(max-width: 500px) {
   .options-modal {
-    top: calc(100vh - 260px);
+    top: calc(100vh - 260px );
     right: 0;
     width: 100%;
     border-radius: 0;

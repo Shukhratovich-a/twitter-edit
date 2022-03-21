@@ -103,3 +103,9 @@
     display: none;
   }
 }
+
+@media only screen and(max-height: 520px) {
+  .new-tweet {
+    display: none;
+  }
+}

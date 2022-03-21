@@ -92,6 +92,10 @@
   .nav {
     margin-bottom: 30px;
   }
+
+  .nav__link[href="/profile"] {
+    display: none;
+  }
 }
 
 @media only screen and(max-width: 1200px) {
@@ -112,7 +116,27 @@
   }
 }
 
-@media only screen and(max-width: 500px) {
+@media only screen and(max-height: 520px) {
+  // @media only screen and(max-width: 1200px) {
+    .nav__list {
+      margin: 0;
+    }
+
+    .nav__link {
+      justify-content: center;
+
+      .icon {
+        margin: 0;
+      }
+    }
+
+    .nav__link__text {
+      display: none;
+    }
+  // }
+}
+
+@media only screen and(max-width: 500px), (max-height: 520px) {
   .nav {
     margin: 0;
   }
