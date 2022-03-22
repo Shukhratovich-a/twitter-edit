@@ -33,7 +33,7 @@
 
 .header__link:hover {
   .header__link__inner {
-    background-color: $cardColor-Light;
+    background-color: $InputColor-Light;
   }
 }
 
@@ -62,7 +62,7 @@
 
   .header__link:hover {
     .header__link__inner {
-      background-color: $cardColor-Dark;
+      background-color: $InputColor-Dark;
     }
   }
 }

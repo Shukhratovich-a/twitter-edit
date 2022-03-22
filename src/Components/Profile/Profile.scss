@@ -6,9 +6,10 @@
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
+  transition: background-color 0.25s ease;
 
   &:hover {
-    background-color: $cardColor-Light;
+    background-color: $InputColor-Light;
   }
 }
 
@@ -44,7 +45,7 @@
 .app--dark {
   .profile {
     &:hover {
-      background-color: $cardColor-Dark;
+      background-color: $InputColor-Dark;
     }
   }
 

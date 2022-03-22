@@ -6,7 +6,7 @@ import "./Profile.scss";
 const Profile = () => {
   return (
     <div className="profile">
-      <UserIcon className="profile__avatar" type={"small"}/>
+      <UserIcon className="profile__avatar" type={"small"} />
 
       <div className="profile__inner">
         <h3 className="profile__name">Shukhratovich_a</h3>

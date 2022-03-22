@@ -1,6 +1,11 @@
+import CommentIcon from "../Lib/Icons/CommentsIcon";
 import MoreSmallIcon from "../Lib/Icons/MoreSmallIcon";
+import RetweetIcon from "../Lib/Icons/RetweetIcon";
+import LikeIcon from "../Lib/Icons/LikeIcon";
 import UserIcon from "../Lib/Icons/UserIcon";
 import "./Tweet.scss";
+import ShareIcon from "../Lib/Icons/ShareIcon";
+import StatsSmallIcon from "../Lib/Icons/StatsSmallIcon";
 
 const Tweet = ({ user }) => {
   return (
@@ -29,6 +34,42 @@ const Tweet = ({ user }) => {
             YPIP dasturining bu yilgi sezoni ham o’z nihoyasiga yetmoqda. Mentorlik davomida talaba
             va yangi bitiruvchilarni o’sayotganini ko’rib hursand bo’ladi odam.
           </p>
+
+          {user.image ? (
+            <img className="tweet__image" src={user.image} alt="" width={595} height={595} />
+          ) : null}
+
+          <ul className="tweet__list">
+            <li className="tweet__item">
+              <button className="tweet__item__button" name="comments">
+                <CommentIcon />
+              </button>
+            </li>
+
+            <li className="tweet__item">
+              <button className="tweet__item__button" name="retweet">
+                <RetweetIcon />
+              </button>
+            </li>
+
+            <li className="tweet__item">
+              <button className="tweet__item__button" name="likes">
+                <LikeIcon />
+              </button>
+            </li>
+
+            <li className="tweet__item">
+              <button className="tweet__item__button" name="share">
+                <ShareIcon />
+              </button>
+            </li>
+
+            <li className="tweet__item">
+              <button className="tweet__item__button" name="share">
+                <StatsSmallIcon />
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </li>

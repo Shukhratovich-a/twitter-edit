@@ -2,6 +2,11 @@
 
 .tweet {
   border-top: 1px solid $strokeColor-Light;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: $cardColor-Light;
+  }
 }
 
 .tweet__inner {
@@ -81,9 +86,57 @@
   @include TextBody;
 }
 
+.tweet__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+
+.tweet__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tweet__item__button {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: -5px;
+  color: $shyColor-Light;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  &[name="retweet"].retweeted {
+    color: $green;
+  }
+
+  &[name="likes"].liked {
+    color: $red;
+  }
+
+  &:hover {
+    background-color: $InputColor-Light;
+  }
+}
+
 .app--dark {
   .tweet {
     border-color: $strokeColor-Dark;
+
+    &:hover {
+      background-color: $cardColor-Dark;
+    }
   }
 
   .tweet__user-name {
@@ -96,6 +149,14 @@
 
   .tweet__top__button {
     color: $shyColor-Dark;
+  }
+
+  .tweet__item__button {
+    color: $shyColor-Dark;
+
+    &:hover{
+      background-color: $InputColor-Dark;
+    }
   }
 }
 

@@ -74,7 +74,7 @@
   border-radius: 50%;
 
   &:hover {
-    background-color: $cardColor-Light;
+    background-color: $InputColor-Light;
   }
 }
 
@@ -93,7 +93,7 @@
 
   .new-tweet__item__button {
     &:hover {
-      background-color: $cardColor-Dark;
+      background-color: $InputColor-Dark;
     }
   }
 }
