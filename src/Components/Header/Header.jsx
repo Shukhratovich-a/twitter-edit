@@ -22,7 +22,10 @@ const Header = () => {
         <TweetButton />
       </div>
 
-      <Profile />
+      <div className="header__bottom">
+        <Profile />
+        
+      </div>
     </header>
   );
 };
