@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TwitterIcon from "../Lib/Icons/TwitterIcon";
 import Nav from "../Nav/Nav";
 import Profile from "../Profile/Profile";
+import ProfileModal from "../ProfileModal/ProfileModal";
 import TweetButton from "../TweetButton/TweetButton";
 
 import "./Header.scss";
@@ -24,7 +25,7 @@ const Header = () => {
 
       <div className="header__bottom">
         <Profile />
-        
+        <ProfileModal />
       </div>
     </header>
   );
