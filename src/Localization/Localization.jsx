@@ -13,6 +13,8 @@ const languages = {
 
     buttons: {
       tweetButton: "Tweet",
+      showMore: "Show more",
+      followButton: "Follow",
     },
 
     newTweet: {
@@ -33,6 +35,14 @@ const languages = {
         modalLintSettings: "Посмотреть настройки контента",
       },
     },
+
+    trends: {
+      trendsHeading: "Trends for you",
+    },
+
+    recomendations: {
+      recomendationsHeading: "You might like",
+    },
   },
   ru: {
     nav: {
@@ -48,6 +58,8 @@ const languages = {
 
     buttons: {
       tweetButton: "Твитнуть",
+      showMore: "Показать еще",
+      followButton: "Читать",
     },
 
     newTweet: {
@@ -68,6 +80,14 @@ const languages = {
         modalLintSettings: "Посмотреть настройки контента",
       },
     },
+
+    trends: {
+      trendsHeading: "Актуальные темы для вас",
+    },
+
+    recomendations: {
+      recomendationsHeading: "Кого читать",
+    },
   },
   uz: {
     nav: {
@@ -83,6 +103,8 @@ const languages = {
 
     buttons: {
       tweetButton: "Tvit",
+      showMore: "Показать еще",
+      followButton: "Follow",
     },
 
     newTweet: {
@@ -103,6 +125,14 @@ const languages = {
         modalLintSettings: "Посмотреть настройки контента",
       },
     },
+  },
+
+  trends: {
+    trendsHeading: "Актуальные темы для вас",
+  },
+
+  recomendations: {
+    recomendationsHeading: "Кого читать",
   },
 };
 

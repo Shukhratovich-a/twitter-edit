@@ -24,6 +24,8 @@ const ProfilePage = () => {
       }
     })();
   }, [userId]);
+  document.title =
+    userState.first_name + " " + userState.last_name + " (@" + userState.first_name + ")";
 
   return (
     <div className="main">

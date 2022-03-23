@@ -1,13 +1,18 @@
 import SettingsIcon from "../Lib/Icons/SettingsIcon";
 import MoreSmallIcon from "../Lib/Icons/MoreSmallIcon";
 
+import useLanguage from "../../Hooks/useLanguage";
+
 import "./FooterTrends.scss";
 
 const FooterTrends = () => {
+  const [lang] = useLanguage();
+
   return (
     <section className="trends">
       <div className="trends__top">
-        <h2 className="trends__heading">Trends for you</h2>
+        <h2 className="trends__heading">{lang.trends.trendsHeading}</h2>
+
         <button className="trends__top__button">
           <SettingsIcon />
         </button>
@@ -56,7 +61,9 @@ const FooterTrends = () => {
       </ul>
 
       <div className="trends__bottom">
-        <a className="trends__link" href="#link">Show more replies</a>
+        <a className="trends__link" href="#link">
+          {lang.buttons.showMore}
+        </a>
       </div>
     </section>
   );

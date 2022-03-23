@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+
+import useLanguage from "../../Hooks/useLanguage";
+
 import UserIcon from "../Lib/Icons/UserIcon";
 
 import "./Recomendation.scss";
 
 const Recomendation = ({ user }) => {
+  const [lang] = useLanguage();
+
   return (
     <li className="recomendation">
       {user.avatar ? (
@@ -27,7 +32,7 @@ const Recomendation = ({ user }) => {
         </Link>
       </div>
 
-      <button className="recomendation__button ">Follow</button>
+      <button className="recomendation__button ">{lang.buttons.followButton}</button>
     </li>
   );
 };
