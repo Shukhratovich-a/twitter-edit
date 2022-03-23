@@ -45,6 +45,12 @@
   margin: 0;
   margin-right: 8px;
   @include TextBodyBold;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .tweet__user-name {
@@ -154,7 +160,7 @@
   .tweet__item__button {
     color: $shyColor-Dark;
 
-    &:hover{
+    &:hover {
       background-color: $InputColor-Dark;
     }
   }

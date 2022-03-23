@@ -93,7 +93,7 @@ const Nav = () => {
         <li className="nav__item">
           <NavLink
             className={({ isActive }) => `nav__link ${isActive ? "nav__link--active" : ""}`}
-            to="/profile"
+            to="/profile/1"
           >
             <span className="nav__link__inner">
               <ProfileIcon />

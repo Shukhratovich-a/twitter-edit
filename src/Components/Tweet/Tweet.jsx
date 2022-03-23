@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 import CommentIcon from "../Lib/Icons/CommentsIcon";
 import MoreSmallIcon from "../Lib/Icons/MoreSmallIcon";
 import RetweetIcon from "../Lib/Icons/RetweetIcon";
 import LikeIcon from "../Lib/Icons/LikeIcon";
 import UserIcon from "../Lib/Icons/UserIcon";
-import "./Tweet.scss";
 import ShareIcon from "../Lib/Icons/ShareIcon";
 import StatsSmallIcon from "../Lib/Icons/StatsSmallIcon";
+
+import "./Tweet.scss";
 
 const Tweet = ({ user }) => {
   return (
@@ -20,7 +23,9 @@ const Tweet = ({ user }) => {
         <div className="tweet__content">
           <div className="tweet__top">
             <div className="tweet__top__left">
-              <h3 className="tweet__name">{user.first_name}</h3>
+              <Link className="tweet__name" to={"/profile/" + user.id}>
+                {user.first_name + " " + user.last_name}
+              </Link>
               <span className="tweet__user-name">@inner</span>
               <span className="tweet__activity">25m</span>
             </div>

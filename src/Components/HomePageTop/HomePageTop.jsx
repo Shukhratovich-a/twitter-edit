@@ -25,6 +25,7 @@ const HomePageTop = () => {
             <SparksIcon />
           </button>
         </div>
+        
         <OptionsModal isOpen={isOpen} />
       </section>
     </>

@@ -1,0 +1,26 @@
+@import "../../Scss/Variables.scss";
+
+.profile__banner {
+  max-width: 100%;
+  width: 100%;
+  height: 210px;
+  background-color: $cardColor-Light;
+  object-fit: scale-down;
+}
+
+.profile__user-avatar {
+  margin-left: 24px;
+  margin-top: -60px;
+  border-radius: 50%;
+  border: 5px solid $bG-Light;
+}
+
+.app--dark {
+  .profile__banner {
+    background-color: $cardColor-Dark;
+  }
+
+  .profile__user-avatar {
+    border-color: $bG-Dark;
+  }
+}
