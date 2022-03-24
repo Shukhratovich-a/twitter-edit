@@ -93,7 +93,7 @@
     margin-bottom: 30px;
   }
 
-  .nav__link[href="/profile"] {
+  .nav__link[name="profile"] {
     display: none;
   }
 }
@@ -169,7 +169,7 @@
     display: none;
   }
 
-  .nav__link[href="/profile"] {
+  .nav__link[name="profile"] {
     display: none;
   }
 

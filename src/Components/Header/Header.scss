@@ -51,6 +51,10 @@
   }
 }
 
+.header__bottom{
+  position: relative;
+}
+
 .app--dark {
   .header {
     background-color: $bG-Dark;

@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 import ArrowIcon from "../Lib/Icons/ArrovIcon";
@@ -5,6 +6,10 @@ import ArrowIcon from "../Lib/Icons/ArrovIcon";
 import "./ProfilePageTop.scss";
 
 const ProfilePageTop = ({ userState }) => {
+  React.useEffect(() => {
+    document.title = "Twitter";
+  },[]);
+
   return (
     <div className="profile__top">
       <Link className="profile__top__link" to={-1}>

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import useLanguage from "../../Hooks/useLanguage";
+import useUser from "../../Hooks/useUser";
 
 import BookmarkIcon from "../Lib/Icons/BookmarkIcon";
 import ExploreIcon from "../Lib/Icons/ExploreIcon";
@@ -14,6 +15,7 @@ import "./Nav.scss";
 
 const Nav = () => {
   const [lang] = useLanguage();
+  const [user] = useUser();
 
   return (
     <nav className="nav">
@@ -93,7 +95,8 @@ const Nav = () => {
         <li className="nav__item">
           <NavLink
             className={({ isActive }) => `nav__link ${isActive ? "nav__link--active" : ""}`}
-            to="/profile/1"
+            to={"/profile/" + user.id}
+            name="profile"
           >
             <span className="nav__link__inner">
               <ProfileIcon />

@@ -1,6 +1,6 @@
 @import "../../Scss/Variables.scss";
 
-.profile {
+.profile__wrapper {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -19,6 +19,7 @@
     width: 40px;
     height: 40px;
     margin-right: 12px;
+    border-radius: 50%;
 
     path {
       display: block;
@@ -43,7 +44,7 @@
 }
 
 .app--dark {
-  .profile {
+  .profile__wrapper {
     &:hover {
       background-color: $InputColor-Dark;
     }

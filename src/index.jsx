@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider as ThemeProvider } from "./Context/ThemeContext";
 import { Provider as LanguageProvider } from "./Context/LanguageContext";
 import { Provider as AuthenticationProvider } from "./Context/Authentication";
+import { Provider as UserProvider } from "./Context/UserContext";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.render(
       <LanguageProvider>
         <ThemeProvider>
           <AuthenticationProvider>
-            <App />
+            <UserProvider>
+              <App />
+            </UserProvider>
           </AuthenticationProvider>
         </ThemeProvider>
       </LanguageProvider>

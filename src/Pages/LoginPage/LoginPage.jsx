@@ -1,3 +1,4 @@
+import React from "react";
 import TwitterIcon from "../../Assets/Images/TwitterLogo.svg";
 import useToken from "../../Hooks/useToken";
 
@@ -26,8 +27,14 @@ const LoginPage = () => {
 
     if (data?.token) {
       setIsLoggedIn(data?.token);
+      window.localStorage.setItem("email", email.value.trim());
     }
   };
+
+  React.useEffect(() => {
+    window.localStorage.removeItem("token");
+    setIsLoggedIn("");
+  });
 
   return (
     <section className="login">

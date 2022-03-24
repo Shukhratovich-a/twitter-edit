@@ -103,8 +103,8 @@ const languages = {
 
     buttons: {
       tweetButton: "Tvit",
-      showMore: "Показать еще",
-      followButton: "Follow",
+      showMore: "Yana ko'rish",
+      followButton: "Obuna bo'lish",
     },
 
     newTweet: {
@@ -114,7 +114,7 @@ const languages = {
     searchInput: "Tvitterdan qidirmoq",
 
     optionsModal: {
-      modalHeading: "На главной сначала отображаются популярные твиты",
+      modalHeading: "Bosh sahifada mashhur tivtlar ko'rinadi",
 
       modalLink1: {
         modalLinkText: "Показывать вместо этого последние твиты",
@@ -125,14 +125,14 @@ const languages = {
         modalLintSettings: "Посмотреть настройки контента",
       },
     },
-  },
 
-  trends: {
-    trendsHeading: "Актуальные темы для вас",
-  },
+    trends: {
+      trendsHeading: "Siz uchun aktual mavzular",
+    },
 
-  recomendations: {
-    recomendationsHeading: "Кого читать",
+    recomendations: {
+      recomendationsHeading: "Kimga obuna bo'lasiz",
+    },
   },
 };
 
