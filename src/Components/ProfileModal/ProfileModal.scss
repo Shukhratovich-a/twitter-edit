@@ -8,12 +8,10 @@
   // left: 0;
   display: none;
 
-  &--open{
+  &--open {
     display: block;
   }
 }
-
-
 
 .profile-edit__modal__inner {
   position: absolute;
@@ -162,6 +160,30 @@
     &::after {
       right: 93%;
       transform: translate(50%, calc(100% - 20px));
+    }
+  }
+}
+
+@media only screen and(max-height: 520px) {
+  .profile-edit__modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba($color: $cardColor-Dark, $alpha: 0.7);
+  }
+
+  .profile-edit__modal__inner {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }
